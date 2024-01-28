@@ -3,90 +3,96 @@
 }
 
 body {
-    font-size: 16px; /* Change to a more standard font size */
-    font-family: 'Tahoma', 'Arial', sans-serif; /* Use single quotes for font names with spaces */
-    margin: 0; /* Remove default body margin */
+    font-size: 10px;
+    font-family: Tahoma, Arial;
 }
 
-.menu {
+div.menu {
+    width: 100%;
     background-color: #4d5791;
-    padding: 10px 40px; /* Adjust padding for better spacing */
+    height: 44px;
+    padding: 0 40px;
 }
 
-.menu ul {
+div.menu ul,
+div.menu ul li {
     margin: 0;
-    padding: 0;
+    padding: 0 ;
     list-style: none;
-}
-
-.menu ul li {
     display: inline-block;
 }
 
-.menu ul li a {
+div.menu ul li a {
     display: block;
-    padding: 10px 20px;
+    padding: 0 20px;
     line-height: 44px;
     font-size: 1.4em;
     text-decoration: none;
     color: #fff;
+    margin: 0;
 }
 
-.menu ul li a:hover {
+div.menu ul li a:hover  {
     background-color: white;
     color: #4d5791;
 }
 
-.hero {
+div.hero {
     height: 350px;
     background-color: #b4c6f0;
     background-image: url('/bg.png');
-    background-size: contain; /* Use contain for background image scaling */
+    background-size: 400px;
     background-repeat: no-repeat;
     background-position: center bottom;
     padding-top: 40px;
-    text-align: center; /* Center text in hero */
 }
 
-.hero h1 {
+div.hero h1,
+div.hero h2 {
+    text-align: center;
+    margin: 0;
+}
+
+div.hero h1 {
     color: #fff;
     font-size: 4.2em;
     margin-bottom: 20px;
 }
 
-.hero h2 {
+div.hero h2 {
     color: #4d5791;
 }
 
 .container {
-    padding: 20px; /* Reduce padding for better spacing */
-    max-width: 1200px; /* Add max-width for larger screens */
-    margin: 0 auto; /* Center the container */
+    padding: 40px;
+    width: 100%;
 }
 
 .page-area {
-    display: flex; /* Use flexbox for page-area */
-    justify-content: space-between; /* Add space between text-box items */
-    flex-wrap: wrap; /* Wrap items for smaller screens */
-}
-
-.text-box {
-    width: 100%;
-    max-width: 340px;
-    text-align: justify;
-    margin: 20px;
+    max-width: 768px;
     display: inline-block;
-}
-
-@media screen and (min-width: 768px) {
-    .text-box {
-        margin: 10px;
-    }
 }
 
 .bottom {
     height: 50px;
     background-color: #b4c6f0;
-    padding: 10px 40px; /* Adjust padding for better spacing */
+    padding: 40px;
+}
+
+.center {
     text-align: center;
+}
+
+.container div.text-box {
+    display: inline-block;
+    width: 100%;
+    max-width: 340px;
+    text-align: justify;
+    margin: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    .container .div.text-box {
+        margin: 10px;
+    }
 }
