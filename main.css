@@ -3,6 +3,7 @@
 }
 
 body {
+<<<<<<< HEAD
     font-size: 16px; /* Change to a more standard font size */
     font-family: 'Tahoma', 'Arial', sans-serif; /* Use single quotes for font names with spaces */
     margin: 0; /* Remove default body margin */
@@ -26,17 +27,49 @@ body {
 .menu ul li a {
     display: block;
     padding: 10px 20px;
+=======
+    font-size: 10px;
+    font-family: Tahoma, Arial;
+}
+
+div.menu {
+    width: 100%;
+    background-color: #4d5791;
+    height: 44px;
+    padding: 0 40px;
+}
+
+div.menu ul,
+div.menu ul li {
+    margin: 0;
+    padding: 0 ;
+    list-style: none;
+    display: inline-block;
+}
+
+div.menu ul li a {
+    display: block;
+    padding: 0 20px;
+>>>>>>> 483cd65aa852ed7457eaf045211c9744f439f346
     line-height: 44px;
     font-size: 1.4em;
     text-decoration: none;
     color: #fff;
+<<<<<<< HEAD
 }
 
 .menu ul li a:hover {
+=======
+    margin: 0;
+}
+
+div.menu ul li a:hover  {
+>>>>>>> 483cd65aa852ed7457eaf045211c9744f439f346
     background-color: white;
     color: #4d5791;
 }
 
+<<<<<<< HEAD
 .hero {
     height: 350px;
     background-color: #b4c6f0;
@@ -49,16 +82,40 @@ body {
 }
 
 .hero h1 {
+=======
+div.hero {
+    height: 350px;
+    background-color: #b4c6f0;
+    background-image: url('/bg.png');
+    background-size: 400px;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    padding-top: 40px;
+}
+
+div.hero h1,
+div.hero h2 {
+    text-align: center;
+    margin: 0;
+}
+
+div.hero h1 {
+>>>>>>> 483cd65aa852ed7457eaf045211c9744f439f346
     color: #fff;
     font-size: 4.2em;
     margin-bottom: 20px;
 }
 
+<<<<<<< HEAD
 .hero h2 {
+=======
+div.hero h2 {
+>>>>>>> 483cd65aa852ed7457eaf045211c9744f439f346
     color: #4d5791;
 }
 
 .container {
+<<<<<<< HEAD
     padding: 20px; /* Reduce padding for better spacing */
     max-width: 1200px; /* Add max-width for larger screens */
     margin: 0 auto; /* Center the container */
@@ -90,3 +147,37 @@ body {
     padding: 10px 40px; /* Adjust padding for better spacing */
     text-align: center;
 }
+=======
+    padding: 40px;
+    width: 100%;
+}
+
+.page-area {
+    max-width: 768px;
+    display: inline-block;
+}
+
+.bottom {
+    height: 50px;
+    background-color: #b4c6f0;
+    padding: 40px;
+}
+
+.center {
+    text-align: center;
+}
+
+.container div.text-box {
+    display: inline-block;
+    width: 100%;
+    max-width: 340px;
+    text-align: justify;
+    margin: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    .container .div.text-box {
+        margin: 10px;
+    }
+}
+>>>>>>> 483cd65aa852ed7457eaf045211c9744f439f346
