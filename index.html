@@ -37,15 +37,31 @@
     <!-- This is an SEO Change -->
     <script type="application/ld+json">
         {
-          "@type": "website",
-          "headline": "A budget management app",
-          "description": "The app is intended to help users create and maintain a financial plan in order to track their income, expenses, and savings goals.",
-          "author": {
-            "@type": "Person",
-            "name": "Fabio Nolasco"
-          }
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Homepage",
+              "item": "URL_TO_HOME"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "About",
+              "item": "URL_TO_ABOUT"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Login",
+              "item": "URL_TO_LOGIN"
+            }
+          ]
         }
-    </script>
+      </script>
+      
     
 
 
