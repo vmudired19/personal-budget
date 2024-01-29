@@ -90,11 +90,11 @@ section.container div.text-box {
     text-align: justify;
     margin: 20px;
 }
-/* Add this CSS to your existing styles or create a new CSS file */
+
 .skip-link {
     position: absolute;
-    top: 45px; /* Adjust the top position according to your design */
-    left: 1px; /* Adjust the left position according to your design */
+    top: 45px;
+    left: 1px; 
     display: inline-block;
     padding: 10px;
     background-color: #9da6d7;
@@ -112,17 +112,35 @@ section.container div.text-box {
 
 .skip-link:focus {
     position: static;
-    left: auto;
-    top: auto;
+    left: 0;
+    top: 0;
     opacity: 1;
 }
 
-/* Style for better focus visibility */
+
 .skip-link:focus {
-    outline: 2px solid #0d0101; /* Add an outline for better focus visibility */
+    outline: 2px solid #f1efef; 
+}
+.menu ul {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease-out;
 }
 
+.menu:hover ul {
+    max-height: 200px; /* Adjust the height as needed */
+}
 
+.menu ul li {
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.menu:hover ul li {
+    opacity: 1;
+    transform: translateY(0);
+}
 
 @media screen and (min-width: 768px) {
     section.container div.text-box {
