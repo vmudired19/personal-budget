@@ -90,6 +90,39 @@ section.container div.text-box {
     text-align: justify;
     margin: 20px;
 }
+/* Add this CSS to your existing styles or create a new CSS file */
+.skip-link {
+    position: absolute;
+    top: 45px; /* Adjust the top position according to your design */
+    left: 1px; /* Adjust the left position according to your design */
+    display: inline-block;
+    padding: 10px;
+    background-color: #9da6d7;
+    color: #fff;
+    text-decoration: none;
+    opacity: 0.1;
+    transition: opacity 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.skip-link:hover {
+    opacity: 1;
+}
+
+.skip-link:focus {
+    position: static;
+    left: auto;
+    top: auto;
+    opacity: 1;
+}
+
+/* Style for better focus visibility */
+.skip-link:focus {
+    outline: 2px solid #0d0101; /* Add an outline for better focus visibility */
+}
+
+
 
 @media screen and (min-width: 768px) {
     section.container div.text-box {
