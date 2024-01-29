@@ -92,34 +92,36 @@ section.container div.text-box {
 }
 
 .skip-link {
-    position: absolute;
-    top: 45px;
-    left: 1px; 
+    position: fixed;
+    top: 50px;
+    left: 10px;
     display: inline-block;
     padding: 10px;
-    background-color: #9da6d7;
-    color: #fff;
+    background-color: #939cd1;
+    color: #000000;
     text-decoration: none;
     opacity: 0.1;
     transition: opacity 0.3s ease;
     border: none;
     cursor: pointer;
+    z-index: 1000;
 }
 
 .skip-link:hover {
     opacity: 1;
+    background-color: #4d5791; 
 }
 
 .skip-link:focus {
-    position: static;
-    left: 0;
-    top: 0;
+    position: fixed;
+    left: 10px;
+    top: 50px;
     opacity: 1;
+    background-color: #4d5791; 
 }
 
-
 .skip-link:focus {
-    outline: 2px solid #f1efef; 
+    outline: 2px solid #f1efef;
 }
 .menu ul {
     overflow: hidden;
@@ -128,7 +130,7 @@ section.container div.text-box {
 }
 
 .menu:hover ul {
-    max-height: 200px; /* Adjust the height as needed */
+    max-height: 200px; 
 }
 
 .menu ul li {
@@ -140,6 +142,9 @@ section.container div.text-box {
 .menu:hover ul li {
     opacity: 1;
     transform: translateY(0);
+}
+section.text-box h1:hover {
+    color: #f8c361; /* Change the color to your desired hover color */
 }
 
 @media screen and (min-width: 768px) {
