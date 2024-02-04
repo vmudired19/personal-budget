@@ -3,26 +3,26 @@
 }
 
 body {
-    font-size: 16px; 
+    font-size: 10px;
     font-family: Tahoma, Arial;
-    margin: 0; 
+}
 
-nav.menu {
+nav {
     width: 100%;
-    background-color: #5d68a6;
+    background-color: #4d5791;
     height: 44px;
     padding: 0 40px;
 }
 
-nav.menu ul,
-nav.menu ul li {
+nav ul,
+nav ul li {
     margin: 0;
-    padding: 0;
+    padding: 0 ;
     list-style: none;
     display: inline-block;
 }
 
-nav.menu ul li a {
+nav ul li a {
     display: block;
     padding: 0 20px;
     line-height: 44px;
@@ -32,58 +32,74 @@ nav.menu ul li a {
     margin: 0;
 }
 
-nav.menu ul li a:hover {
+nav ul li a:hover  {
     background-color: white;
-    color: #4d5791;
+    color: #e38bba;
+}
+h1:hover {
+    color: #48f3d9; /* Set the color you want on hover */
+    cursor: pointer; /* Add a pointer cursor on hover */
 }
 
-header.hero {
+
+div.hero {
     height: 350px;
     background-color: #b4c6f0;
-    background-image: url('/bg.png');
+    background-image: url('bg.png');
     background-size: 400px;
     background-repeat: no-repeat;
     background-position: center bottom;
     padding-top: 40px;
 }
 
-header.hero h1,
-header.hero h2 {
+div.hero h1,
+div.hero h2 {
     text-align: center;
     margin: 0;
 }
 
-header.hero h1 {
+div.hero h1 {
     color: #fff;
     font-size: 4.2em;
     margin-bottom: 20px;
 }
 
-header.hero h2 {
-    color: #4d5791;
+div.hero h2 {
+    color: #d37f7f;
 }
 
-section.container {
+main {
     padding: 40px;
     width: 100%;
 }
 
-article.page-area {
+.page-area {
     max-width: 768px;
     display: inline-block;
 }
 
-footer.bottom {
+footer {
     height: 50px;
-    background-color: #b4c6f0;
-    padding: 10px; 
+    background-color: #695ea7;
+    padding: 40px;
+}
+
+.skip {
+    display: block;
+    line-height: 44px;
+    padding: 0 20px;
+    margin-top: -44px;
+}
+
+.skip:focus {
+    margin-top: 0;
 }
 
 .center {
     text-align: center;
 }
 
-section.container div.text-box {
+main article {
     display: inline-block;
     width: 100%;
     max-width: 340px;
@@ -91,65 +107,8 @@ section.container div.text-box {
     margin: 20px;
 }
 
-.skip-link {
-    position: fixed;
-    top: 50px;
-    left: 10px;
-    display: inline-block;
-    padding: 10px;
-    background-color: #939cd1;
-    color: #000000;
-    text-decoration: none;
-    opacity: 0.1;
-    transition: opacity 0.3s ease;
-    border: none;
-    cursor: pointer;
-    z-index: 1000;
-}
-
-.skip-link:hover {
-    opacity: 1;
-    background-color: #4d5791; 
-}
-
-.skip-link:focus {
-    position: fixed;
-    left: 10px;
-    top: 50px;
-    opacity: 1;
-    background-color: #4d5791; 
-}
-
-.skip-link:focus {
-    outline: 2px solid #f1efef;
-}
-.menu ul {
-    overflow: hidden;
-    max-height: 0;
-    transition: max-height 0.3s ease-out;
-}
-
-.menu:hover ul {
-    max-height: 200px; 
-}
-
-.menu ul li {
-    opacity: 0;
-    transform: translateY(-20px);
-    transition: opacity 0.5s, transform 0.5s;
-}
-
-.menu:hover ul li {
-    opacity: 1;
-    transform: translateY(0);
-}
-section.text-box h1:hover {
-    color: #f8c361; /* Change the color to your desired hover color */
-}
-
 @media screen and (min-width: 768px) {
-    section.container div.text-box {
+    main article {
         margin: 10px;
     }
-}
 }

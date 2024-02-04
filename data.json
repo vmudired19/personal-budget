@@ -1,0 +1,32 @@
+{
+    "myBudget": [
+        {
+            "title": "Concerts",
+            "budget": 150
+        },
+        {
+            "title": "Rent",
+            "budget": 575
+        },
+        {
+            "title": "Grocery",
+            "budget": 100
+        },
+        {
+            "title": "Mislineous",
+            "budget": 290
+        },
+        {
+            "title": "electricity",
+            "budget": 100
+        },
+        {
+            "title": "Mobile",
+            "budget": 37
+        },
+        {
+            "title": "Travel",
+            "budget": 124
+        }
+    ]
+}

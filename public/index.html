@@ -1,229 +1,367 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Added meta description for SEO -->
-    <meta name="description" content="Manage your personal budget effectively with this free app. Stay on track, receive alerts, and achieve financial goals.">
-    <!-- Optimized page title for SEO -->
-    <title>Personal Budget Management App - Track Expenses, Get Alerts, and Achieve Financial Goals</title>
+    <title>Personal Budget</title>
+    <meta name="description" content="A free personal budger app">
+    <meta name="keywords" content="app free budget finance">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="main.css">
-    <!-- Added CSS for navigation bar animation -->
     <style>
-        
-
-        h1.glide {
-            position: relative;
-            top: 45%;
-            left: 55%;
-            transform: translate(35%, -150%);
-            animation: glideAnimation 10s linear infinite;
+     /* This is A11y Change*/
+     
+     /* This is A11y Change*/ 
+     
+     /* This is A11y Change*/
+      footer { background-color: #f2f2f2; }
+      svg {
+            width: 100%;
+            height: 100%;
         }
 
-        @keyframes glideAnimation {
-            0%, 100% {
-                left: -120%;
-            }
-            50% {
-                left: 50%;
-            }
+        path.slice{
+            stroke-width:2px;
+        }
+
+        polyline{
+            opacity: .3;
+            stroke: black;
+            stroke-width: 2px;
+            fill: none;
+        }
+        .skip {
+            position: fixed;
+            top: 100px;
+            left: 10px;
+            background-color: #8793d9;
+            color: #fff;
+            padding: 10px;
+            z-index: 9999;
+            text-decoration: none; /* Remove default link underline */
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+            display: none; 
+            opacity: 0.2;/* Initially hidden */
+        }
+
+        /* Button-like styles */
+        .skip {
+            display: inline-block;
+            font-weight: bold;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+
+        .skip:hover {
+            background-color: #34407b;
         }
     </style>
 </head>
-
 <body>
-    <!-- This is an SEO Change -->
-    <script type="application/ld+json">
-        {
-          "@context": "https://schema.org",
-          "@type": "BreadcrumbList",
-          "itemListElement": [
-            {
-              "@type": "ListItem",
-              "position": 1,
-              "name": "Homepage",
-              "item": "URL_TO_HOME"
-            },
-            {
-              "@type": "ListItem",
-              "position": 2,
-              "name": "About",
-              "item": "URL_TO_ABOUT"
-            },
-            {
-              "@type": "ListItem",
-              "position": 3,
-              "name": "Login",
-              "item": "URL_TO_LOGIN"
-            }
-          ]
+
+    <a href="#main" class="skip" id="skipLink">Skip to content</a>
+<script>
+    // JavaScript to handle the click event and scroll to the main content
+    document.getElementById('skipLink').addEventListener('click', function(event) {
+        event.preventDefault();
+
+        // Get the target element (main content) and scroll to it
+        var targetElement = document.getElementById('main');
+        if (targetElement) {
+            targetElement.scrollIntoView({ behavior: 'smooth' });
         }
-      </script>
-      
-    
-
-
-    <!-- Added skip-link functionality using JavaScript for A11y -->
-    <a href="#main-content" class="skip-link" onclick="skipToMainContent()">Skip to main content</a>
-
-    <!-- Changed div to nav for better semantics -->
-    <nav class="menu" role="navigation">
+    });
+</script>
+    <nav>
         <ul>
-            <li><a href="/">Homepage</a></li>
+            <li><a href="/">Home</a></li>
             <li><a href="/about.html">About</a></li>
-            <li><a href="/login.html">Login</a></li>
+            <!-- This is semantic change-->
+            <li><a href="/login.html">LoginPage</a></li>
             <li><a href="https://google.com">Google</a></li>
         </ul>
     </nav>
 
-    <!-- Changed div to header for better semantics -->
-    <header class="hero fade-in">
-        <!-- Added gliding h1 element -->
-        <h1 class="glide">Personal Budget</h1>
+    <div class="hero">
+        <h1>Personal Budget</h1>
         <h2>A personal-budget management app</h2>
-    </header>
+    </div>
 
-    <!-- Changed div to section for better semantics -->
-    <section class="container center" role="main">
+    <main class="center" id="main">
 
-        <!-- Changed div to article for better semantics -->
-        <article id="main-content" class="page-area fade-in">
+        <div class="page-area">
 
-            <!-- Changed div to section for better semantics -->
-            <section class="text-box">
-                <!-- Added the semantic and seo change to the H1 header hover function the h1-->
+            <article>
+                <h1>Stay on track</h1>
+                <!-- This is SEO Change-->
+                <meta name="description" content="Advice for staying on track">
+                 <!-- This is semantic change-->
+                <h3>
+                    Do you know where you are spending your money? If you really stop to track it down,
+                    you would get surprised! Proper budget management depends on real data... and this
+                    app will help you with that!
+                </h3>
+            </article>
+    
+            <article>
+                <!-- This is SEO change-->
+                <h1>Alerts</h1>
+                 <!-- This is semantic change-->
+                <i>
+                    What if your clothing budget ended? You will get an alert. The goal is to never go over the budget.
+                </i>
+            </article>
+    
+            <article>
+                <!-- This is SEO change-->
+                <h1><i>Results</i></h1>
+                <p>
+                    People who stick to a financial plan, budgeting every expense, get out of debt faster!
+                    Also, they to live happier lives... since they expend without guilt or fear... 
+                    because they know it is all good and accounted for.
+                </p>
+            </article>
+    
+            <article>
+                <h1>Free</h1>
+                <p>
+                    This app is free!!! And you are the only one holding your data!
+                </p>
+            </article>
+    
+            <article>
                 <h1>Stay on track</h1>
                 <p>
                     Do you know where you are spending your money? If you really stop to track it down,
                     you would get surprised! Proper budget management depends on real data... and this
                     app will help you with that!
                 </p>
-            </section>
-
-            <!-- Changed div to section for better semantics -->
-            <section class="text-box">
+            </article>
+    
+            <article>
                 <h1>Alerts</h1>
                 <p>
                     What if your clothing budget ended? You will get an alert. The goal is to never go over the budget.
                 </p>
-            </section>
-
-            <!-- Changed div to section for better semantics -->
-            <section class="text-box">
+            </article>
+    
+            <article>
                 <h1>Results</h1>
                 <p>
                     People who stick to a financial plan, budgeting every expense, get out of debt faster!
-                    Also, they to live happier lives... since they expend without guilt or fear...
+                    Also, they to live happier lives... since they expend without guilt or fear... 
                     because they know it is all good and accounted for.
                 </p>
-            </section>
-
-            <!-- Changed div to section for better semantics seo and semantic-->
-            <section class="text-box">
+            </article>
+    
+            <article>
                 <h1>Chart</h1>
                 <p>
                     <canvas id="myChart" width="400" height="400"></canvas>
                 </p>
-            </section>
+            </article>
 
-        </article>
+            <div>
+                <h1>D3.js Chart</h1>
+                <svg width="960px", height="650px" style="margin: 5px;"></svg>
+            </div>
 
-    </section>
 
-    <!-- Changed div to footer for better semantics -->
-    <footer class="bottom fade-in">
+        </div>
+
+    </main>
+
+    <footer class="bottom">
         <div class="center">
             All rights reserved &copy; Fabio Nolasco
         </div>
     </footer>
 
-    <!-- Added JavaScript function for skip-link functionality and animation A11y-->
-    <script>
-        function skipToMainContent() {
-            document.getElementById('main-content').scrollIntoView({ behavior: 'smooth' });
-        }
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js" integrity="sha512-quHCp3WbBNkwLfYUMd+KwBAgpVukJu5MncuQaWXgCrfgcxCJAq/fo+oqrRKOj+UKEmyMCG3tb8RB63W+EmrOBg==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js" integrity="sha512-s+xg36jbIujB2S2VKfpGmlC3T5V2TF3lY48DX7u2r9XzGzgPsa6wTpOQA7J9iffvdeBN0q9tKzRxVxw1JviZPg==" crossorigin="anonymous"></script>
 
-        // Adding fade-in animation after the page has loaded A11y semantic
-        document.addEventListener('DOMContentLoaded', function () {
-            const elementsToFadeIn = document.querySelectorAll('.fade-in');
-            elementsToFadeIn.forEach((element) => {
-                element.classList.add('show');
-            });
-        });
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.7/axios.min.js" integrity="sha512-NQfB/bDaB8kaSXF8E77JjhHG5PM6XVRxvHzkZiwl3ddWCEPBa23T76MuWSwAJdMGJnmQqM0VeY9kFszsrBEFrQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.min.js" integrity="sha512-L0Shl7nXXzIlBSUUPpxrokqq4ojqgZFQczTYlGjzONGTDAcLremjwaWv5A+EDLnxhQzY5xUZPWLOLqYRkY0Cbw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script>
         var dataSource = {
-            datasets: [
-                {
-                    data: [70, 200, 108, 152, 100, 95, 155], // Adjusted values for better visualization
-                    backgroundColor: [
-                        '#ffcd56',
-                        '#ff6384',
-                        '#fd6b19',
-                        '#AE00FF',
-                        '#00D8FF',
-                        '#68C393',
-                        'A7C368'
-                    ],
-                }
-            ],
-            labels: [
-                'Concerts',
-                'Utilities',
-                'Groceries',
-                'Restaurents',
-                'Movies',
-                'Gas',
-                'Room Rent'
-            ]
-        };
-    
+                datasets: [
+                    {
+                        data: [],
+                        backgroundColor: [
+                            '#ffcd78',
+                            '#ff3684',
+                            '#37a2eb',
+                            '#800381',
+                            '#FFCOCB',
+                            '#fd6b25',
+                            '#088080',
+                        ]
+                    }
+                ],
+                labels: []
+            };
+
         function createChart() {
-    var ctx = document.getElementById("myChart").getContext("2d");
-
-    // Check if the chart already exists and destroy it
-    if (window.myPieChart) {
-        window.myPieChart.destroy();
-    }
-
-    // Create a new chart with the updated data source
-    window.myPieChart = new Chart(ctx, {
-        type: 'pie',
-        data: dataSource,
-        options: {
-            responsive: true,
-            maintainAspectRatio: false // Add this option for better responsiveness
+            var ctx = document.getElementById('myChart').getContext('2d');
+            var myPieChart = new Chart(ctx, {
+                type: 'pie',
+                data: dataSource
+            });
         }
-    });
-}
 
         function getBudget() {
             axios.get('/budget')
             .then(function (res) {
-            console.log(res.data);
-            for (var i = 0; i < res.data.length; i++) {
-                dataSource.datasets[0].data[i] = res.data.myBudget[i].budget;
-                dataSource.labels[i] = res.data.myBudget[i].title;
-                //dataSource.datasets[0].backgroundColor[i] = res.data[i].color;
-            }
-        })
-        .then(function () {
-            createChart();
-        })
-        .catch(function (error) {
-            console.error('Error fetching budget data:', error);
-        });
-    }
-    getBudget();
-    createChart();
-    
-    </script>
-    
-</body>
+                for (var i = 0; i < res.data.myBudget.length; i++) {
+                    dataSource.datasets[0].data[i] = res.data.myBudget[i].budget;
+                    dataSource.labels[i] = res.data.myBudget[i].title;
+                }
+                createChart();
+            });
+        }
 
+        getBudget();
+    </script>
+
+<script src="http://d3js.org/d3.v3.min.js"></script>
+
+<script>
+    var svg = d3.select("svg")
+        .append("g")
+
+    svg.append("g")
+        .attr("class", "slices");
+    svg.append("g")
+        .attr("class", "labels");
+    svg.append("g")
+        .attr("class", "lines");
+
+    var width = 960,
+        height = 450,
+        radius = Math.min(width, height) / 2;
+
+    var pie = d3.layout.pie()
+        .sort(null)
+        .value(function(d) {
+            return d.value;
+        });
+
+    var arc = d3.svg.arc()
+        .outerRadius(radius * 0.8)
+        .innerRadius(radius * 0.4);
+
+    var outerArc = d3.svg.arc()
+        .innerRadius(radius * 0.9)
+        .outerRadius(radius * 0.9);
+
+    svg.attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
+
+    var key = function(d){ return d.data.label; };
+
+    var color = d3.scale.ordinal()
+        .domain(["Lorem ipsum", "dolor sit", "amet", "consectetur", "adipisicing", "elit", "sed", "do", "eiusmod", "tempor", "incididunt"])
+        .range(["#98abd6", "#8a89p6", "#7b6999", "#6b496c", "#a0501", "#d0749f", "#ff8c11"]);
+
+    axios.get('/budget').then(res => {
+        console.log(res);
+        var data = res.data.myBudget.map(obj => {
+            return {label: obj.title, value: obj.budget}
+        })
+        change(data);
+    })
+
+    function change(data) {
+
+        /* ------- PIE SLICES -------*/
+        var slice = svg.select(".slices").selectAll("path.slice")
+            .data(pie(data), key);
+
+        slice.enter()
+            .insert("path")
+            .style("fill", function(d) { return color(d.data.label); })
+            .attr("class", "slice");
+
+        slice		
+            .transition().duration(1000)
+            .attrTween("d", function(d) {
+                this._current = this._current || d;
+                var interpolate = d3.interpolate(this._current, d);
+                this._current = interpolate(0);
+                return function(t) {
+                    return arc(interpolate(t));
+                };
+            })
+
+        slice.exit()
+            .remove();
+
+        /* ------- TEXT LABELS -------*/
+
+        var text = svg.select(".labels").selectAll("text")
+            .data(pie(data), key);
+
+        text.enter()
+            .append("text")
+            .attr("dy", ".35em")
+            .text(function(d) {
+                return d.data.label;
+            });
+        
+        function midAngle(d){
+            return d.startAngle + (d.endAngle - d.startAngle)/2;
+        }
+
+        text.transition().duration(1000)
+            .attrTween("transform", function(d) {
+                this._current = this._current || d;
+                var interpolate = d3.interpolate(this._current, d);
+                this._current = interpolate(0);
+                return function(t) {
+                    var d2 = interpolate(t);
+                    var pos = outerArc.centroid(d2);
+                    pos[0] = radius * (midAngle(d2) < Math.PI ? 1 : -1);
+                    return "translate("+ pos +")";
+                };
+            })
+            .styleTween("text-anchor", function(d){
+                this._current = this._current || d;
+                var interpolate = d3.interpolate(this._current, d);
+                this._current = interpolate(0);
+                return function(t) {
+                    var d2 = interpolate(t);
+                    return midAngle(d2) < Math.PI ? "start":"end";
+                };
+            });
+
+        text.exit()
+            .remove();
+
+        /* ------- SLICE TO TEXT POLYLINES -------*/
+
+        var polyline = svg.select(".lines").selectAll("polyline")
+            .data(pie(data), key);
+        
+        polyline.enter()
+            .append("polyline");
+
+        polyline.transition().duration(1000)
+            .attrTween("points", function(d){
+                this._current = this._current || d;
+                var interpolate = d3.interpolate(this._current, d);
+                this._current = interpolate(0);
+                return function(t) {
+                    var d2 = interpolate(t);
+                    var pos = outerArc.centroid(d2);
+                    pos[0] = radius * 0.95 * (midAngle(d2) < Math.PI ? 1 : -1);
+                    return [arc.centroid(d2), outerArc.centroid(d2), pos];
+                };			
+            });
+        
+        polyline.exit()
+            .remove();
+    };
+</script>
+
+</body>
 </html>
