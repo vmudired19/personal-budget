@@ -7,13 +7,13 @@ app.use("/",express.static("public"));
 console.log(budget)
 
 app.get("/hello", (req,res) => {
-    res.send("Hello Pooja");
+    res.send("Hello Venkata Pranaay Reddy Mudireddy");
 })
 
 app.get("/budget", (req,res) => {
     res.json(budget);
 })
-// -------
+
 
 app.listen(port, () => {
     console.log(`API served at http://localhost:${port}`);
