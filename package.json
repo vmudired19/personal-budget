@@ -11,9 +11,9 @@
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/naveenaduri/personal-budget/issues"
+    "url": "https://github.com/vmudired19/personal-budget/issues"
   },
-  "homepage": "https://github.com/naveenaduri/personal-budget#readme",
+  "homepage": "https://github.com/vmudired19/personal-budget#readme",
   "dependencies": {
     "cors": "^2.8.5",
     "d3": "^7.8.5",
